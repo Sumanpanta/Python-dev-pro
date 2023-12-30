@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    
+
+    <!-- For border of table, we use style tag to put border:solid rakhna paryo
+    otherwise border line not shown -->
+    <style>
+        table,th,td{
+            border: 1px solid blue; 
+        }
+    </style>
 </head>
 <body>
     <h1 style="background-color:green;">This is our first test website. We are using this for project, practical and other learning</h1>
@@ -81,5 +88,63 @@
              kathmandu, Nepal <br>
         </address>
 
+        <!-- img tag don't have closing tag, 
+             it just have various attribute like:src,alt etc , attributes also denotes 
+            parameter in other programming language : width,height,-->
+        <img src="img/tiger.jpeg" alt="tiger">
+
+        <!-- 14.list items in html page:ul(unordered list) and
+             li(inside: order and unordered list); ol(ordered list), dl(description list)
+            inside dl:(dt:discription tag) dd(it shows all the description of item)-->
+            <ul>
+                <li>Cat</li>
+                <li>Dog</li>
+                <li>Tiger</li>
+            </ul>
+
+            <ol>
+                <li>Cat</li>
+                <li>Dog</li>
+                <li>Man</li>
+            </ol>
+
+            <dl>
+                <dt>Coffee</dt>
+                <dd> -Black hot drink used in western country</dd>
+            </dl>
+
+            <!-- lets take another example -->
+            <dl>
+                <dt>Milk </dt>
+                <dd> -White drink having many vitamins</dd>
+            </dl>
+
+            <!-- 15. Adding table in html: table tag, 
+                having table row(tr) having table data(td),
+            
+            table tag have various attribute like table head(th)(inside tr)we use table heading
+        table heading is very important for denoting the heading and other thing in table -->
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Roll no </th>
+                    </tr>
+                    <tr>
+                        <td>Suman</td>
+                        <td>16</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>Pravin</td>
+                        <td>12</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Santoshi</td>
+                        <td>15</td>
+                        <td>12</td>
+                    </tr> 
+                </table>
 </body>
 </html>
