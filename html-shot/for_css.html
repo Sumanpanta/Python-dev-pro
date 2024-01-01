@@ -6,16 +6,75 @@
     <title>HomePage for Html</title>
     <style>
         /*we will add comment words and after adding, 
-        we will comment using stcut */
+        we will comment using stcut 19.color*/
          
-        h1{background-color: aqua;
+        h1{background-color: rgb(36, 172, 36);
         text-align: center;
-        color:gold;}
+        color:rgb(255, 255, 255);
+        border: 2px solid green;
+        border-width: 5px; 
+        border-color:red;    
+        margin: 10px;
+    }
+
+        /*after having knowledge about, rgb, normal color, we have hsl color
+        :which define color in form of hsl:hue, saturation and lightness ;first one(hue)
+         in number and other are used as %% to form color*/
+
+        h2{
+            background-color: hsl(104, 74%, 21%);
+            color:rgb(255, 255, 255);
+            text-align:center;
+            border: 2px solid rgb(252, 227, 2);
+            border-width: 5px; 
+            border-color:rgb(73, 89, 231);
+            margin:10px;
+        }
+
+        /*20.now going to body tag for background color, images etc (for image, we use url('')
+         then put link of image inside)*/
+       /* body{
+            background-color: rgb(101, 248, 175); 
+            background-image: url('/img/oneplant.jpg');
+            background-size: cover;
+
+        }  */
+        
+        /*21.css box model(margin, padding, border: (border in px, with solid and (color))
+           the padding property is used to create space between the content of html element and 
+           its border )*/
+        /*22.css outline, text and font: the outline property is used to add visible border
+        around an HTML element without effecting its layout: name to property:outline*/
+
+        h3{
+            padding:10px;
+            border: 2px solid green;
+            border-width: 5px; 
+            border-color:rgb(107, 75, 247);
+            margin:10px;
+           /* outline: 4px solid red; */
+           font-size: 26px;
+           font-weight: bold;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color:rgb(0, 0, 0);
+           text-align: center;
+           text-decoration: underline;
+           font-style: italic;
+           
+
+        }
+
+
+
+
     </style>
 
 </head>
 <body>
     <h1>This text is for putting homepage style using CSS</h1>
     <h1>this is another part for style</h1>
+    <h2>this is another things for style, about us page </h2>
+    <h3>this is just for showing how to put border along with properties</h3>
+
 </body>
 </html>
