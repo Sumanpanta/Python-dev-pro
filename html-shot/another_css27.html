@@ -1,0 +1,38 @@
+<!-- from 27.Dropdown, I use this  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{                /*class vitra ko lai . */
+            position: relative;
+            display: inline;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            padding: auto;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{        /*when hover: you see .dropdown-content with display block*/
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>Hover over me</span>
+        <div class="dropdown-content">
+            <p>Hello Dropdown learning users</p>
+            <p>Having fun ??/p>
+            <p>learning this simple things at age 23???</p>
+        </div>
+    </div>
+</body>
+</html>

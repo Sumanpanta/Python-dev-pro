@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 150px;
+            width: 200px;
+            background-color: blueviolet;
+            overflow: auto;    /*it will be adding a scrollbar when necessary ; not add when not necessary
+            overflow with x axis, y axis is also done: auto,scroll,*/
+            margin:10px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        img{
+            opacity: 1;
+            float: inherit;     /*with the help of this we can set the image left to right,inherit(from other img)
+                                  and vice-versa*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }   
+    </style>
+</head>
+<body>                 
+    <!-- body ma vako background image ma opacity le kaam gardaina, so use img tag to set image and 
+    opacity(0.1,0.2....etc) properties will work, in css img{} -->
+    <!-- <div>
+        This is test for div tag using CSS.
+    </div> -->
+    
+    <img src="/img/profile.png" alt="" width="30%">
+
+
+    <!-- the overflow properties specifies whether to clip the content or to 
+    add scrollbars when the content of element is to big to fit the specified area -->
+    
+    <div>You can use the overflow property when you want to have better control  of the layout.
+        The overflow property specified what happen if content overflows an elemet's box.
+    </div>
+
+</body>
+</html>

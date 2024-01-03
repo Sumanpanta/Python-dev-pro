@@ -15,6 +15,9 @@
         border-width: 5px; 
         border-color:red;    
         margin: 10px;
+        position: relative;            /*position relative to nearest element*/
+        top:10px;            
+        left:20px; 
     }
 
         /*after having knowledge about, rgb, normal color, we have hsl color
@@ -29,6 +32,7 @@
             border-width: 5px; 
             border-color:rgb(73, 89, 231);
             margin:10px;
+            position:static;                 /*24.css position:static, relative*/
         }
 
         /*20.now going to body tag for background color, images etc (for image, we use url('')
@@ -60,21 +64,136 @@
            text-align: center;
            text-decoration: underline;
            font-style: italic;
-           
+           position: absolute;    /*go on the left side absolute */
+
 
         }
+        /*23.css links,list and tables*/
+        /*a tag has property called color, text, font, hover etc (lets set the property for
+        hover which can be done by a:hover{} (what happen after hover); a:visited(after visited))
+        */
+        /*
+        a{
+            color:rgb(226, 3, 255);
+        }
+        a:hover{
+            color:green;
+            text-decoration: dashed;
+        }
+        a:visited{
+            color:rgb(24, 97, 255);
 
+        }
+        */
+        /*position defines whether to put image, inside or outside*/
+/*
+        ul{
+            list-style-type: disc;
+            list-style-position: inside;
+            list-style-image: url('/img/tiger.jpeg');
+            
+        }
+        ol{
+            list-style-type: decimal;
+            list-style-position: outside;
+           /* list-style-image: url('/img/tiger.jpeg');
+        }
+        */
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th,td{
+            border: 2px solid black;
+        }
 
+        h4{
+            position:fixed; /*24.are position relative to viewpoint and do not move*/
+            top: 0;
+            right: 0;
+            display: block;   /*25.*/
+            z-index: 2;
+        }
 
+        h5{
+            position:sticky;    /*aru yeta uta sarepani sticky vayera baseko*/
+            top: 0;
+            display: inline;         /*max-width image  ko lagi use hunca normally */
+            z-index: 1;      /*Z index property is used to control the stacking order of element in webpage*/
 
+        }
+        ul{
+            margin: 20px;
+            padding: 10px;
+            width: 60px;
+
+        }
+        li{
+            display: inline-block;
+            margin: 10px;
+            padding: auto;
+        }
+
+        
     </style>
 
 </head>
 <body>
-    <h1>This text is for putting homepage style using CSS</h1>
+    <!-- <h1>This text is for putting homepage style using CSS</h1>
     <h1>this is another part for style</h1>
     <h2>this is another things for style, about us page </h2>
-    <h3>this is just for showing how to put border along with properties</h3>
+    <h3>this is just for showing how to put border along with properties</h3> -->
+    <!-- lets add a tag for css for links -->
+    <a href="https://www.google.com/">Click Here For Google Search</a>
+    <h4>This is just4 test for CSS</h4>
+    <h5>This is test5 for CSS</h5>
+
+    <!-- <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <ol>
+        <li>number1</li>
+        <li>number2</li>
+        <li>number3</li>
+        <li>number4</li>
+    </ol> -->
+
+    <!-- for tables in css -->
+    <!-- <table>
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll no </th>
+        </tr>
+        <tr>
+            <td>Suman</td>
+            <td>16</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Pravin</td>
+            <td>12</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Santoshi</td>
+            <td>15</td>
+            <td>12</td>
+        </tr> 
+    </table> -->
+
+
+
+    <!-- for nav bar we use ul tag along with li and a -->
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Aboutus</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Team</a></li>
+    </ul>
 
 </body>
 </html>
